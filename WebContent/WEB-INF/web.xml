@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>CartDB</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>personServlet</servlet-name>
+    <servlet-class>service.PersonService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>personServlet</servlet-name>
+    <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>service.LoginService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>showShopsServlet</servlet-name>
+    <servlet-class>service.ShopService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showShopsServlet</servlet-name>
+    <url-pattern>/showShops</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>showGoodsServlet</servlet-name>
+    <servlet-class>service.GoodService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showGoodsServlet</servlet-name>
+    <url-pattern>/showGoods</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>shopInfoServlet</servlet-name>
+    <servlet-class>service.ShopInfoService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shopInfoServlet</servlet-name>
+    <url-pattern>/shopInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>shopQueryServlet</servlet-name>
+    <servlet-class>service.ShopQueryService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shopQueryServlet</servlet-name>
+    <url-pattern>/queryShopBySeller</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>shopUpdateServlet</servlet-name>
+    <servlet-class>service.ShopUpdateService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shopUpdateServlet</servlet-name>
+    <url-pattern>/updateShop</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>goodRemoveServlet</servlet-name>
+    <servlet-class>service.GoodRemoveService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goodRemoveServlet</servlet-name>
+    <url-pattern>/removeGood</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>goodCreateServlet</servlet-name>
+    <servlet-class>service.GoodCreateService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goodCreateServlet</servlet-name>
+    <url-pattern>/createGood</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>fetchItemServlet</servlet-name>
+    <servlet-class>service.CartItemService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fetchItemServlet</servlet-name>
+    <url-pattern>/fetchCartItems</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>createItemServlet</servlet-name>
+    <servlet-class>service.CartItemCreateService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createItemServlet</servlet-name>
+    <url-pattern>/createCartItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>delItemServlet</servlet-name>
+    <servlet-class>service.CartItemDelService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delItemServlet</servlet-name>
+    <url-pattern>/delCartItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>testServlet</servlet-name>
+    <servlet-class>service.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>testServlet</servlet-name>
+    <url-pattern>/testt</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
